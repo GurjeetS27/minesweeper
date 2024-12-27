@@ -1,117 +1,62 @@
 Minesweeper Game
+----------------
 
-A Python-based GUI implementation of the classic Minesweeper game using the tkinter library. This project is designed for both beginners and advanced programmers to explore interactive GUI development and logic-based gameplay.
+A Python-based GUI implementation of the classic Minesweeper game using the `tkinter` library. This project is designed for both beginners and advanced programmers to explore interactive GUI development and logic-based gameplay.
 
-Features
+### Features
 
-Classic Minesweeper Gameplay: Navigate through a grid, avoiding hidden mines while uncovering cells.
+* **Classic Minesweeper Gameplay**: Navigate through a grid, avoiding hidden mines while uncovering cells.
+* **Graphical User Interface (GUI)**: Built with the `tkinter` library for an intuitive and interactive experience.
+* **Timer**: Tracks the time spent on each game.
+* **Restart Button**: Restart the game at any point with a single click.
+* **Flagging System**: Right-click to flag potential mines.
+* **Game Results**: Displays whether you win or lose, with mines visually marked on the board.
+* **Result Saving**: Saves the game board and moves to a text file for review.
 
-Graphical User Interface (GUI): Built with the tkinter library for an intuitive and interactive experience.
+### Installation
 
-Timer: Tracks the time spent on each game.
+1. Clone the repository:
+git clone https://github.com/GurjeetS27/minesweeper.git cd minesweeper
+2. Ensure you have Python 3.x installed on your system.
+3. Install any required dependencies (if needed):
+  pip install -r requirements.txt
 
-Restart Button: Restart the game at any point with a single click.
+*(Note: `tkinter` is typically included with Python installations.)*
 
-Flagging System: Right-click to flag potential mines.
+### How to Play
 
-Game Results: Displays whether you win or lose, with mines visually marked on the board.
+1. Run the script:
+   python minesweeper.py
+2. A Minesweeper game window will appear with a grid of buttons.
 
-Result Saving: Saves the game board and moves to a text file for review.
+3. **Gameplay**:
+  * Left-click to reveal a cell.
+  * Right-click to flag a cell as a potential mine.
+  * The numbers in revealed cells indicate how many neighboring mines exist.
 
-Installation
+4. **Winning Condition**:
+  * Uncover all cells without triggering a mine.
 
-Clone the repository:
+5. **Losing Condition**:
+  * Clicking on a mine ends the game.
 
-git clone https://github.com/yourusername/minesweeper.git
-cd minesweeper
+6. Restart the game using the "Restart" button.
 
-Ensure you have Python 3.x installed on your system.
+### File Structure
 
-Install any required dependencies (if needed):
+  * `minesweeper.py`: The main game logic and GUI code.
+  * `result.txt`: A text file where game results (board state and moves) are saved.
 
-pip install -r requirements.txt
+### Future Enhancements
 
-(Note: tkinter is typically included with Python installations.)
+  * Add difficulty levels (Easy, Medium, Hard).
+  * Implement a hint system to assist players.
+  * Introduce animations and sound effects for a more engaging experience.
+  * Add a leaderboard to track best times.
 
-How to Play
+### Screenshots
 
-Run the script:
+#### Game Interface
+![image](https://github.com/user-attachments/assets/62111b3a-d32d-4b07-a3d0-86808c97cc8f)
 
-python minesweeper.py
-
-A Minesweeper game window will appear with a grid of buttons.
-
-Gameplay:
-
-Left-click to reveal a cell.
-
-Right-click to flag a cell as a potential mine.
-
-The numbers in revealed cells indicate how many neighboring mines exist.
-
-Winning Condition:
-
-Uncover all cells without triggering a mine.
-
-Losing Condition:
-
-Clicking on a mine ends the game.
-
-Restart the game using the "Restart" button.
-
-File Structure
-
-minesweeper.py: The main game logic and GUI code.
-
-result.txt: A text file where game results (board state and moves) are saved.
-
-Future Enhancements
-
-Add difficulty levels (Easy, Medium, Hard).
-
-Implement a hint system to assist players.
-
-Introduce animations and sound effects for a more engaging experience.
-
-Add a leaderboard to track best times.
-
-Screenshots
-
-Game Interface
-
-
-
-(Replace screenshot.png with an actual screenshot of your game interface.)
-
-Contributing
-
-Contributions are welcome! If you would like to enhance the game or fix issues:
-
-Fork the repository.
-
-Create a new branch.
-
-git checkout -b feature-name
-
-Make your changes and commit them.
-
-git commit -m "Description of changes"
-
-Push your changes to your forked repository.
-
-git push origin feature-name
-
-Open a pull request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
-
-Inspired by the classic Minesweeper game.
-
-Built using Python and the tkinter library.
-
-Enjoy playing Minesweeper! If you encounter any issues or have suggestions for improvement, feel free to open an issue in the repository.
 
